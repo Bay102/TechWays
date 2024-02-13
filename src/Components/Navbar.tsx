@@ -1,20 +1,20 @@
-import { useAuthProvider } from '../Providers/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useAuthProvider } from '../Providers/AuthContext'
+import { useNavigate } from 'react-router-dom'
 // import UserMenu from './UserMenu';
-import { supabase } from '../supabaseConfig';
-import { toast } from 'react-toastify';
+import { supabase } from '../supabaseConfig'
+import { toast } from 'react-toastify'
 
 const Navbar = () => {
-  const { user, setUser } = useAuthProvider();
+  const { user, setUser } = useAuthProvider()
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const signOutUser = async () => {
-    setUser(null);
-    await supabase.auth.signOut();
-    navigate('/');
-    toast.success('Goodbye');
-  };
+    setUser(null)
+    await supabase.auth.signOut()
+    navigate('/')
+    toast.success('Goodbye')
+  }
 
   return (
     <div className="navbar bg-base-100 w-full flex flex-col sm:flex-row">
@@ -23,7 +23,7 @@ const Navbar = () => {
           className="btn btn-ghost normal-case text-xl"
           onClick={() => navigate('/')}
         >
-          APP
+          CodingPaths
         </a>
       </div>
 
@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
