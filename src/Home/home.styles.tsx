@@ -8,7 +8,7 @@ export const HomeContainer = styled.div`
   background-color: gray;
 `
 
-export const HeroContainer = styled.div`
+export const Attributes = styled.div`
   width: 90%;
   height: 500px;
   display: flex;

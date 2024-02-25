@@ -1,12 +1,7 @@
-import * as S from './attribute.styles'
+import { observer } from 'mobx-react'
 
-type AttributeProps = {
-  title: string
-  attributes: string
-}
-
-const Attribute = ({ title, attributes }: AttributeProps) => {
-  return <S.AttributeContainer></S.AttributeContainer>
-}
+const Attribute = observer(() => {
+  return <div>Attribute</div>
+})
 
 export default Attribute

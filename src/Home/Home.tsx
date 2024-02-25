@@ -1,4 +1,5 @@
-import Attribute from '../Components/Attribute/Attribute'
+import { Attributes } from '../Components/Attributes/Attributes'
+import { AttributesStore } from '../Components/Attributes/AttributesStore'
 import Navbar from '../Components/Navbar'
 import * as S from './home.styles'
 
@@ -6,11 +7,9 @@ const Home = () => {
   return (
     <S.HomeContainer>
       <Navbar />
-      <S.HeroContainer>
-        <Attribute title="" attributes={''} />
-        <Attribute title="" attributes={''} />
-        <Attribute title="" attributes={''} />
-      </S.HeroContainer>
+      <S.Attributes>
+        <Attributes store={AttributesStore} />
+      </S.Attributes>
     </S.HomeContainer>
   )
 }
