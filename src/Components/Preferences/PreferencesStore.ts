@@ -1,18 +1,13 @@
 import { makeAutoObservable } from 'mobx'
 
-export type AttributeContainerProps = {
-  attribute: string
-  addAttribute: (attribute: string) => void
+export type PreferencesStoreProps = {
+  //
 }
 
-class PreferenceStore implements AttributeContainerProps {
+class PreferenceStore implements PreferencesStoreProps {
   constructor() {
     makeAutoObservable(this)
   }
-
-  attribute = 'test'
-
-  addAttribute = (attribute: string) => {}
 }
 
 export const PreferencesStore = new PreferenceStore()
