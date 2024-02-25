@@ -10,8 +10,14 @@ type Props = {
 export const Interests = observer(({ attributeStore }: Props) => {
   return (
     <S.InterestsContainer>
-      <AttributeCard title="Intrigued By.." attributes={[]} />
-      <AttributeCard title="Personality" attributes={[]} />
+      <AttributeCard
+        title="Intrigued By.."
+        attributes={attributeStore.intriguedBy}
+      />
+      <AttributeCard
+        title="Personality"
+        attributes={attributeStore.personality}
+      />
     </S.InterestsContainer>
   )
 })

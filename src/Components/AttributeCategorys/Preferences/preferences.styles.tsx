@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PreferencesContainer = styled.div`
-  width: 80%;
+  width: 70%;
   height: 250px;
   display: flex;
   justify-content: center;

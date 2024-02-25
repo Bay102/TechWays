@@ -10,11 +10,11 @@ type Props = {
 export const Professional = observer(({ attributeStore }: Props) => {
   return (
     <S.ProfessionalContainer>
-      <AttributeCard title="Professional" attributes={[]} />
-      <AttributeCard title="Professional" attributes={[]} />
-      <AttributeCard title="Professional" attributes={[]} />
-      <AttributeCard title="Professional" attributes={[]} />
-      <AttributeCard title="Professional" attributes={[]} />
+      <AttributeCard title="Paths" attributes={[]} />
+      <AttributeCard title="Industry" attributes={[]} />
+      <AttributeCard title="Goals" attributes={[]} />
+      <AttributeCard title="Market Difficulty" attributes={[]} />
+      <AttributeCard title="Skill Level" attributes={[]} />
     </S.ProfessionalContainer>
   )
 })

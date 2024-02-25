@@ -10,11 +10,11 @@ type Props = {
 export const Preferences = observer(({ attributeStore }: Props) => {
   return (
     <S.PreferencesContainer>
-      <AttributeCard title="Preferences" attributes={[]} />
-      <AttributeCard title="Preferences" attributes={[]} />
-      <AttributeCard title="Preferences" attributes={[]} />
-      <AttributeCard title="Preferences" attributes={[]} />
-      <AttributeCard title="Preferences" attributes={[]} />
+      <AttributeCard title="Length" attributes={[]} />
+      <AttributeCard title="In-Person/Remote" attributes={[]} />
+      <AttributeCard title="Learning Format" attributes={[]} />
+      <AttributeCard title="Community" attributes={[]} />
+      <AttributeCard title="Mentorship" attributes={[]} />
     </S.PreferencesContainer>
   )
 })

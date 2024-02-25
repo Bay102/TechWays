@@ -3,14 +3,14 @@ import { styled } from 'styled-components'
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
-
+  height: 100vh;
   padding: 0;
   background-color: gray;
 `
 
 export const AttributesContainer = styled.div`
   width: 100%;
-  height: max-content;
+  height: 100%;
   display: flex;
   gap: 10px;
   padding: 10px;
