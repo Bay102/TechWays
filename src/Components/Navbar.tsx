@@ -23,7 +23,7 @@ const Navbar = () => {
           className="btn btn-ghost normal-case text-xl"
           onClick={() => navigate('/')}
         >
-          CodingPaths
+          TechWays
         </a>
       </div>
 
