@@ -10,9 +10,9 @@ const Home = () => {
     <S.HomeContainer>
       <Navbar />
       <S.AttributesContainer>
-        <Interests />
-        <Professional />
-        <Preferences store={AttributesStore} />
+        <Interests attributeStore={AttributesStore} />
+        <Professional attributeStore={AttributesStore} />
+        <Preferences attributeStore={AttributesStore} />
       </S.AttributesContainer>
     </S.HomeContainer>
   )
