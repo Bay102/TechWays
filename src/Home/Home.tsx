@@ -1,5 +1,5 @@
-import { Attributes } from '../Components/Attributes/Attributes'
-import { AttributesStore } from '../Components/Attributes/AttributesStore'
+import { Preferences } from '../Components/Preferences/Preferences'
+import { PreferencesStore } from '../Components/Preferences/PreferencesStore'
 import Navbar from '../Components/Navbar'
 import * as S from './home.styles'
 
@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <S.HomeContainer>
       <Navbar />
-      <S.Attributes>
-        <Attributes store={AttributesStore} />
-      </S.Attributes>
+      <S.PreferencesContainer>
+        <Preferences store={PreferencesStore} />
+      </S.PreferencesContainer>
     </S.HomeContainer>
   )
 }

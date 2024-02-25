@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react'
 
-const Attribute = observer(() => {
+const AttributeCard = observer(() => {
   return <div>Attribute</div>
 })
 
-export default Attribute
+export default AttributeCard

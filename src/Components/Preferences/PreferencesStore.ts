@@ -5,7 +5,7 @@ export type AttributeContainerProps = {
   addAttribute: (attribute: string) => void
 }
 
-class AttributeContainerStore implements AttributeContainerProps {
+class PreferenceStore implements AttributeContainerProps {
   constructor() {
     makeAutoObservable(this)
   }
@@ -15,4 +15,4 @@ class AttributeContainerStore implements AttributeContainerProps {
   addAttribute = (attribute: string) => {}
 }
 
-export const AttributesStore = new AttributeContainerStore()
+export const PreferencesStore = new PreferenceStore()
