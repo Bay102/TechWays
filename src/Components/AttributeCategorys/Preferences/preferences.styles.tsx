@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const PreferencesContainer = styled.div`
-  width: 90%;
-  height: 500px;
+  width: 80%;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;

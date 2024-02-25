@@ -1,13 +1,19 @@
 import Navbar from '../Components/Navbar'
-import { Preferences } from '../Components/Preferences/Preferences'
-import { PreferencesStore } from '../Components/Preferences/PreferencesStore'
+import { Interests } from '../Components/AttributeCategorys/Interests/Interests'
+import { Preferences } from '../Components/AttributeCategorys/Preferences/Preferences'
+import { AttributesStore } from '../Components/AttributeCategorys/AttributesStore'
+import { Professional } from '../Components/AttributeCategorys/Professional/Professional'
 import * as S from './home.styles'
 
 const Home = () => {
   return (
     <S.HomeContainer>
       <Navbar />
-      <Preferences store={PreferencesStore} />
+      <S.AttributesContainer>
+        <Interests />
+        <Professional />
+        <Preferences store={AttributesStore} />
+      </S.AttributesContainer>
     </S.HomeContainer>
   )
 }
