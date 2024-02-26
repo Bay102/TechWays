@@ -1,10 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const InterestsContainer = styled.div`
   display: flex;
+  flex: 1;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   width: 45%;
-  height: 400px;
+  min-height: 400px;
   border: 1px solid red;
-`
+  padding: 20px;
+`;
