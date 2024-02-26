@@ -1,12 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
   min-width: 175px;
-  height: 150px;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid black;
-`
+`;
 
 export const CardTitle = styled.h2`
   text-align: center;
@@ -14,5 +13,5 @@ export const CardTitle = styled.h2`
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
-  font-family: 'Anta', sans-serif;
-`
+  font-family: "Anta", sans-serif;
+`;
