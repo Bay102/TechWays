@@ -13,6 +13,8 @@ const Home = () => {
       <S.AttributesContainer>
         <Interests attributeStore={AttributesStore} />
         <Professional attributeStore={AttributesStore} />
+      </S.AttributesContainer>
+      <S.AttributesContainer>
         <Preferences attributeStore={AttributesStore} />
         <TechTrackWindow />
       </S.AttributesContainer>

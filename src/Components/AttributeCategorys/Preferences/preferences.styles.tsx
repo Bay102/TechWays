@@ -4,6 +4,8 @@ export const PreferencesContainer = styled.div`
   width: 70%;
   height: 250px;
   display: flex;
+  flex-wrap: wrap;
+  flex: 2;
   justify-content: center;
   align-items: start;
   align-self: center;

@@ -8,5 +8,6 @@ export const ProfessionalContainer = styled.div`
   align-items: start;
   /* width: 45%; */
   height: 400px;
+  min-width: min-content;
   border: 1px solid red;
 `;
