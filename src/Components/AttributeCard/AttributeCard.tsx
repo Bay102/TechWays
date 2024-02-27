@@ -13,7 +13,7 @@ type CardProps = {
   attributes: AttributeObject
 }
 
-const AttributeCard = ({ title, attributes }: CardProps) => {
+const AttributeCategory = ({ title, attributes }: CardProps) => {
   return (
     <S.CardContainer>
       <S.CardTitle>{title}</S.CardTitle>
@@ -30,5 +30,5 @@ const AttributeCard = ({ title, attributes }: CardProps) => {
   )
 }
 
-const ObservedAttributeCard = observer(AttributeCard)
-export default ObservedAttributeCard
+const AttributeCard = observer(AttributeCategory)
+export default AttributeCard

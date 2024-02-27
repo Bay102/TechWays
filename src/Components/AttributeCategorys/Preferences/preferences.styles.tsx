@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const PreferencesContainer = styled.div`
   width: 70%;
@@ -9,6 +9,5 @@ export const PreferencesContainer = styled.div`
   justify-content: center;
   align-items: start;
   align-self: center;
-  border: 1px solid red;
   background-color: white;
-`;
+`

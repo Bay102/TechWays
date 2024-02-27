@@ -18,6 +18,5 @@ export const AttributesContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   align-self: center;
-  border: 1px solid red;
   background-color: white;
 `
