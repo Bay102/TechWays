@@ -6,7 +6,7 @@ export const PreferencesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex: 2;
-  justify-content: center;
+  justify-content: space-around;
   align-items: start;
   align-self: center;
   background-color: white;

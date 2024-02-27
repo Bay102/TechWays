@@ -30,13 +30,13 @@ const Navbar = () => {
       {!user && (
         <div className="flex flex-row gap-2">
           <button
-            className="btn btn-sm btn-outline btn-secondary"
+            className="btn btn-sm btn-outline"
             onClick={() => navigate('/login')}
           >
             Login
           </button>
           <button
-            className="btn btn-sm btn-outline btn-primary"
+            className="btn btn-sm btn-outline"
             onClick={() => navigate('/register')}
           >
             Join

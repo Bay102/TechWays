@@ -1,4 +1,5 @@
-import { makeAutoObservable } from "mobx";
+import { action, makeAutoObservable, observable } from 'mobx'
+
 
 export type Attribute = {
   selected: boolean;
@@ -45,10 +46,12 @@ class AttributeStore implements AttributeStoreProps {
     makeAutoObservable(this);
   }
 
+
+  @observable
   onSelected = (attribute: Attribute) => {
     attribute.selected = !attribute.selected;
-    console.log(attribute.selected);
   };
+
 
   intriguedBy = {
     technology: { selected: false, label: "Technology", value: "technology" },
@@ -74,6 +77,7 @@ class AttributeStore implements AttributeStoreProps {
     algorithms: { selected: false, label: "Algorithms", value: "algorithms" },
   };
 
+  @observable
   personality = {
     logicalThinker: { selected: false, label: "Logical", value: "logical" },
     creative: { selected: false, label: "Creative", value: "creative" },
@@ -102,84 +106,87 @@ class AttributeStore implements AttributeStoreProps {
       label: "Good Communicator",
       value: "goodCommunicator",
     },
-    empathetic: { selected: false, label: "Empathetic", value: "empathetic" },
-    humble: { selected: false, label: "Humble", value: "humble" },
-    confident: { selected: false, label: "Confident", value: "confident" },
-  };
+
+    empathetic: { selected: false, label: 'Empathetic', value: 'empathetic' },
+    humble: { selected: false, label: 'Humble', value: 'humble' },
+    confident: { selected: false, label: 'Confident', value: 'confident' },
+  }
 
   goals = {
-    hobby: { selected: false, label: "Hobby", value: "hobby" },
+    hobby: { selected: false, label: 'Hobby', value: 'hobby' },
     personalStartup: {
       selected: false,
-      label: "Personal Startup",
-      value: "personalStartup",
+      label: 'Personal Startup',
+      value: 'personalStartup',
     },
-    career: { selected: false, label: "Career", value: "career" },
-    freelance: { selected: false, label: "Freelance", value: "freelance" },
-    openSource: { selected: false, label: "Open Source", value: "openSource" },
-    agency: { selected: false, label: "Agency", value: "agency" },
-  };
+    career: { selected: false, label: 'Career', value: 'career' },
+    freelance: { selected: false, label: 'Freelance', value: 'freelance' },
+    openSource: { selected: false, label: 'Open Source', value: 'openSource' },
+    agency: { selected: false, label: 'Agency', value: 'agency' },
+  }
+
 
   industry = {
     webDevelopment: {
       selected: false,
-      label: "Web Development",
-      value: "webDevelopment",
+
+      label: 'Web Development',
+      value: 'webDevelopment',
     },
     mobileDevelopment: {
       selected: false,
-      label: "Mobile Development",
-      value: "mobileDevelopment",
+      label: 'Mobile Development',
+      value: 'mobileDevelopment',
     },
     gameDevelopment: {
       selected: false,
-      label: "Game Development",
-      value: "gameDevelopment",
+      label: 'Game Development',
+      value: 'gameDevelopment',
     },
-    devOps: { selected: false, label: "DevOps", value: "devOps" },
+    devOps: { selected: false, label: 'DevOps', value: 'devOps' },
     dataScience: {
       selected: false,
-      label: "Data Science",
-      value: "dataScience",
+      label: 'Data Science',
+      value: 'dataScience',
     },
     machineLearning: {
       selected: false,
-      label: "Machine Learning",
-      value: "machineLearning",
+      label: 'Machine Learning',
+      value: 'machineLearning',
     },
     cyberSecurity: {
       selected: false,
-      label: "Cyber Security",
-      value: "cyberSecurity",
+      label: 'Cyber Security',
+      value: 'cyberSecurity',
     },
     cloudComputing: {
       selected: false,
-      label: "Cloud Computing",
-      value: "cloudComputing",
+      label: 'Cloud Computing',
+      value: 'cloudComputing',
     },
-    blockchain: { selected: false, label: "Blockchain", value: "blockchain" },
+    blockchain: { selected: false, label: 'Blockchain', value: 'blockchain' },
     artificialIntelligence: {
       selected: false,
-      label: "Artificial Intelligence",
-      value: "artificialIntelligence",
+      label: 'Artificial Intelligence',
+      value: 'artificialIntelligence',
     },
-    robotics: { selected: false, label: "Robotics", value: "robotics" },
+    robotics: { selected: false, label: 'Robotics', value: 'robotics' },
     augmentedReality: {
       selected: false,
-      label: "Augmented Reality",
-      value: "augmentedReality",
+      label: 'Augmented Reality',
+      value: 'augmentedReality',
     },
     virtualReality: {
       selected: false,
-      label: "Virtual Reality",
-      value: "virtualReality",
+      label: 'Virtual Reality',
+      value: 'virtualReality',
     },
     internetOfThings: {
       selected: false,
-      label: "Internet of Things",
-      value: "internetOfThings",
+      label: 'Internet of Things',
+      value: 'internetOfThings',
     },
-  };
+  }
 }
 
 export const AttributesStore = new AttributeStore();
