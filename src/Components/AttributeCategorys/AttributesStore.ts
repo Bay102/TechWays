@@ -81,6 +81,7 @@ class AttributeStore implements AttributeStoreProps {
     confident: { selected: false, label: "Confident", value: "confident" },
   };
 
+  @observable
   goals = {
     hobby: { selected: false, label: "Hobby", value: "hobby" },
     personalStartup: {
