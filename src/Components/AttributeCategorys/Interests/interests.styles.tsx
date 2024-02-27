@@ -8,5 +8,5 @@ export const InterestsContainer = styled.div`
   width: 45%;
   min-height: 400px;
   border: 1px solid red;
-  padding: 20px;
+  /* padding: 20px; */
 `;
