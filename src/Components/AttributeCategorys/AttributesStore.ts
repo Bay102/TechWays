@@ -36,11 +36,18 @@ export type AttributeStoreProps = {
     humble: Attribute
     confident: Attribute
   }
+
+  onSelected: (attribute: Attribute) => void
 }
 
 class AttributeStore implements AttributeStoreProps {
   constructor() {
     makeAutoObservable(this)
+  }
+
+  onSelected = (attribute: Attribute) => {
+    attribute.selected = !attribute.selected
+    console.log(attribute.selected)
   }
 
   intriguedBy = {
