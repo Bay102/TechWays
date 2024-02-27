@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
   min-width: 175px;
   box-sizing: border-box;
-  border: 1px solid black;
 `;
 
 export const CardTitle = styled.h2`
