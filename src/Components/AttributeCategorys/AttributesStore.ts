@@ -155,6 +155,93 @@ class AttributeStore implements AttributeStoreProps {
     },
   };
 
+  marketDifficulty = {
+    lestDifficult: { selected: false, label: "Least Difficult", value: "1" },
+    difficult: { selected: false, label: "Difficult", value: "2" },
+    mostDifficult: { selected: false, label: "Most Difficult", value: "3" },
+  };
+
+  skillLevel = {
+    noob: { selected: false, label: "Noob", value: "1" },
+    skilled: { selected: false, label: "Skilled", value: "2" },
+    expert: { selected: false, label: "Expert", value: "3" },
+  };
+
+  lengthOfTime = {
+    threeToSixMonths: { selected: false, label: "3-6 Months", value: "1" },
+    sixToEighteenMonths: { selected: false, label: "6-18 Months", value: "2" },
+    eighteenPlusMonths: { selected: false, label: "18+ Months", value: "3" },
+  };
+
+  shoolSetting = {
+    remote: { selected: false, label: "Remote", value: "remote" },
+    inPerson: { selected: false, label: "In Person", value: "inPerson" },
+    hybrid: { selected: false, label: "Hybrid", value: "hybrid" },
+  };
+
+  learningFormat = {
+    videoTutorial: {
+      selected: false,
+      label: "Video Tutorial",
+      value: "videoTutorial",
+    },
+    liveLecture: {
+      selected: false,
+      label: "Live Lecture",
+      value: "liveLecture",
+    },
+    projectReviews: {
+      selected: false,
+      label: "Project Reviews",
+      value: "projectReviews",
+    },
+    quizzes: { selected: false, label: "Quizzes", value: "quizzes" },
+    studentCollaboration: {
+      selected: false,
+      label: "Student Collaboration",
+      value: "studentCollaboration",
+    },
+    mentorship: { selected: false, label: "Mentorship", value: "mentorship" },
+  };
+
+  commnity = {
+    strongStudentPresence: {
+      selected: false,
+      label: "Strong Student Presence",
+      value: "strongStudentPresence",
+    },
+    p2pCollaboration: {
+      selected: false,
+      label: "P2P Collaboration",
+      value: "p2pCollaboration",
+    },
+    hackathons: { selected: false, label: "Hackathons", value: "hackathons" },
+    virtualClassrooms: {
+      selected: false,
+      label: "Virtual Classrooms",
+      value: "virtualClassrooms",
+    },
+  };
+
+  mentorship = {
+    weeklyCheckins: {
+      selected: false,
+      label: "Weekly Checkins",
+      value: "weeklyCheckins",
+    },
+    dailyCheckins: {
+      selected: false,
+      label: "Daily Checkins",
+      value: "dailyCheckins",
+    },
+    monthlyCheckins: {
+      selected: false,
+      label: "Monthly Checkins",
+      value: "monthlyCheckins",
+    },
+    noCheckins: { selected: false, label: "No Checkins", value: "noCheckins" },
+  };
+
   @action
   onSelected = (attribute: Attribute) => {
     attribute.selected = !attribute.selected;
