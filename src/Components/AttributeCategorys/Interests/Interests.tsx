@@ -1,23 +1,23 @@
-import { observer } from 'mobx-react'
-import AttributeCard from '../../AttributeCard/AttributeCard'
-import { AttributeStoreProps } from '../AttributesStore'
-import * as S from './interests.styles'
+import { observer } from "mobx-react";
+import AttributeCard from "../../AttributeCard/AttributeCard";
+import { AttributeStoreProps } from "../AttributesStore";
+import * as S from "./interests.styles";
 
 type Props = {
-  attributeStore: AttributeStoreProps
-}
+  attributeStore: AttributeStoreProps;
+};
 
 export const Interests = observer(({ attributeStore }: Props) => {
   return (
     <S.InterestsContainer>
       <AttributeCard
-        title="Intrigued By.."
-        attributes={attributeStore.intriguedBy}
+        title='Intrigued By..'
+        attributes={attributeStore.personalChoices.intriguedBy}
       />
       <AttributeCard
-        title="Personality"
-        attributes={attributeStore.personality}
+        title='Personality'
+        attributes={attributeStore.personalChoices.personality}
       />
     </S.InterestsContainer>
-  )
-})
+  );
+});
