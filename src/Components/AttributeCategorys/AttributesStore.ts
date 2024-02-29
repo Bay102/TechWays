@@ -9,11 +9,12 @@ export type Attribute = {
 export type AttributeObject = { [key: string]: Attribute };
 
 export type AttributeStoreProps = {
-  IntriguesAndDispositionChoices: {
+  personalChoices: {
     intriguedBy: AttributeObject;
     personality: AttributeObject;
   };
   professionalChoices: {
+    paths: AttributeObject;
     goals: AttributeObject;
     industry: AttributeObject;
     marketDifficulty: AttributeObject;
@@ -34,7 +35,7 @@ class AttributeStore implements AttributeStoreProps {
     makeAutoObservable(this);
   }
 
-  IntriguesAndDispositionChoices = {
+  personalChoices = {
     intriguedBy: {
       technology: { selected: false, label: "Technology", value: "technology" },
       coding: { selected: false, label: "Coding", value: "coding" },
@@ -101,6 +102,16 @@ class AttributeStore implements AttributeStoreProps {
     },
   };
   professionalChoices = {
+    paths: {
+      selfLearning: {
+        selected: false,
+        label: "Self Learning",
+        value: "selfLearning",
+      },
+      bootcamp: { selected: false, label: "Bootcamp", value: "bootcamp" },
+      degree: { selected: false, label: "Degree", value: "degree" },
+      internship: { selected: false, label: "Internship", value: "internship" },
+    },
     goals: {
       hobby: { selected: false, label: "Hobby", value: "hobby" },
       personalStartup: {
