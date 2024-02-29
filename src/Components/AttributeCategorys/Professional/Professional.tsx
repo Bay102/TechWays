@@ -10,7 +10,9 @@ type Props = {
 export const Professional = observer(({ attributeStore }: Props) => {
   return (
     <S.ProfessionalContainer>
+     
       <AttributeCard
+        title="Skill Level"
         title='Paths'
         attributes={attributeStore.professionalChoices.paths}
       />
