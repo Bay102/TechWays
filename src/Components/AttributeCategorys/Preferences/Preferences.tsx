@@ -11,23 +11,23 @@ export const Preferences = observer(({ attributeStore }: Props) => {
   return (
     <S.PreferencesContainer>
       <AttributeCard
-        title='Length'
+        title='Community'
         attributes={attributeStore.educationalChoices.commnity}
       />
       <AttributeCard
-        title='In-Person/Remote'
+        title='Learning Format'
         attributes={attributeStore.educationalChoices.learningFormat}
       />
       <AttributeCard
-        title='Learning Format'
+        title='Length of time'
         attributes={attributeStore.educationalChoices.lengthOfTime}
       />
       <AttributeCard
-        title='Community'
+        title='Mentorship'
         attributes={attributeStore.educationalChoices.mentorship}
       />
       <AttributeCard
-        title='Mentorship'
+        title='School Setting'
         attributes={attributeStore.educationalChoices.shoolSetting}
       />
     </S.PreferencesContainer>
