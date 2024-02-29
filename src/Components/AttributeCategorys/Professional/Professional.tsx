@@ -30,11 +30,6 @@ export const Professional = observer(({ attributeStore }: Props) => {
         title="Skill Level"
         attributes={attributeStore.professionalChoices.skillLevel}
       />
-      <AttributeCard title="Industry" attributes={attributeStore.industry} />
-      <AttributeCard title="Goals" attributes={attributeStore.goals} />
-      <AttributeCard title="Paths" attributes={[]} />
-      <AttributeCard title="Market Difficulty" attributes={[]} />
-      <AttributeCard title="Skill Level" attributes={[]} />
     </S.ProfessionalContainer>
   )
 })
