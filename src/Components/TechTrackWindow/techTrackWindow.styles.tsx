@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const TechTrackContainer = styled.div`
+  background-color: cornflowerblue;
   border: 1px solid black;
-  width: 500px;
-  height: 250px;
+  flex: 1;
+  width: 50%;
 `;
