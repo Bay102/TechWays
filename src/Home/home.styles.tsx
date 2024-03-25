@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { styled } from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
   height: 100vh;
   padding: 0;
   background-color: gray;
-`
+`;
 
 export const AttributesContainer = styled.div`
   width: 100%;
@@ -19,4 +19,8 @@ export const AttributesContainer = styled.div`
   align-items: center;
   align-self: center;
   background-color: white;
-`
+`;
+
+export const BodyContainer = styled.div`
+  display: flex;
+`;
